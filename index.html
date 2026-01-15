@@ -9,18 +9,20 @@
 </head>
 <body>
 	<nav class="tab">
-		<button class="tablinks" onclick="openCity(event, 'First')">First tab</button>
-		<button class="tablinks" onclick="openCity(event, 'Second')">Second tab</button>
-		<button class="tablinks" onclick="openCity(event, 'Third')">Third tab</button>
-		<button class="tablinks" onclick="openCity(event, 'Fourth')">Fourth tab</button>
+		<button class="tablinks active" onclick="openTab(event, 'First')">First tab</button>
+		<button class="tablinks" onclick="openTab(event, 'Second')">Second tab</button>
+		<button class="tablinks" onclick="openTab(event, 'Third')">Third tab</button>
+		<button class="tablinks" onclick="openTab(event, 'Fourth')">Fourth tab</button>
 	</nav>
 
 
 	<p>Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable the first tab.</p>
-	<div id="First" class="content">First tab content to be display here.</div>
+	<div id="First" class="content" style="display:block">First tab content to be display here.</div>
 	<div id="Second" class="content">Second tab content to be display here.</div>
 	<div id="Third" class="content">Third tab content to be display here.</div>
 	<div id="Fourth" class="content">Fourth tab content to be display here.</div>
 	<p>Add some dummy content or just add a simple text showing the tab.</p>
+
+	
 </body>
 </html>
